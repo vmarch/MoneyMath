@@ -12,3 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+/app/build/outputs
+/app/build/release
+/app/build/debug
+*.log
