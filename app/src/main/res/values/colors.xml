@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CA6F00</color>
+    <color name="colorPrimaryDark">#922D05</color>
+    <color name="colorAccent">#63D81B</color>
+
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorDivider">#9B9B9B</color>
+    <color name="colorDividerBig">#C76539</color>
+    <color name="colorDividerSmall">#D89084</color>
+
+    <color name="colorDividerListBig">#C3F0C1</color>
+    <color name="colorDividerListSmall">#ADE7AE</color>
+
+    <color name="colorBackgroundEditors">#FFB746</color>
+    <color name="colorBackgroundEditorsFilter">#9AFFFFFF</color>
+    <color name="colorBackgroundList">#F4FFF3</color>
+</resources>

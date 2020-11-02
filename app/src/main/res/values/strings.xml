@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MoneyMath</string>
+    <string name="dev_name">V.March</string>
+    <string name="company_name">dev_to_life</string>
+
+    <string name="context_description_arrow_back">Go back</string>
+
+    <!-- settings activity-->
+    <string name="title_settings_activity">Settings:</string>
+
+    <!-- settings activity-->
+    <string name="title_about_app_activity">About App:</string>
+    <string name="about_row_name">Name</string>
+    <string name="about_row_author">Developer</string>
+    <string name="about_row_version">Version of APP</string>
+
+    <!-- privacy activity-->
+    <string name="title_privacy_activity">Privacy Policy:</string>
+    <string name="privacy_full"><![CDATA[
+    <p align="justify"><b>Welcome to the <a
+    href="https://play.google.com/store/apps/details?id=devtolife.moneymath">“MoneyMath”</a> Privacy Policy</b><br>
+	<br>
+    Last modified: December 13, 2019.<br>
+	<br>
+    We do not collect any confidential information.<br>
+	<br>
+	You can use “MoneyMath” at your own discretion.<br>
+	<br>
+    Our Privacy Policy may change from time to time.
+    We will not reduce your rights under this Privacy Policy without your explicit consent.
+    We will post any privacy policy changes on this
+    page by this link:</p>
+    <a href="https://vmarch.github.io/privacy_policy_moneymath.html">https://vmarch.github.io/privacy_policy_moneymath.html</a></b><br>
+    And in this application while update.
+    ]]></string>
+    <string name="text_open_privacy">Go to: "https://vmarch.github.io/privacy_policy_moneymath.html"</string>
+</resources>

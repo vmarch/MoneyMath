@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.MainActivity"
+    tools:showIn="@layout/main_activity">
+
+    <LinearLayout
+        android:id="@+id/layoutMainBlock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutMainEditors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundEditors"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutImageName"
+                    android:layout_width="@dimen/row_primary_width"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField1"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/presence_away" />
+
+                    <View
+                        android:id="@+id/dividerIconField1"
+                        style="@style/DividerBigStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField2"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/presence_away" />
+
+                    <View
+                        android:id="@+id/dividerIconField2"
+                        style="@style/DividerBigStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField3"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/presence_busy" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField4"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/presence_audio_away" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/sym_call_incoming" />
+
+                    <View
+                        android:id="@+id/dividerIconField3"
+                        style="@style/DividerBigStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField6"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/presence_video_busy" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField7"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/stat_sys_vp_phone_call_on_hold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField8"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/stat_sys_vp_phone_call_on_hold" />
+
+                    <View
+                        android:id="@+id/dividerIconField4"
+                        style="@style/DividerBigStyle" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIconField9"
+                        android:layout_width="@dimen/row_primary_width"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/ic_menu_view" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutImageNamePercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/viewIconExtraFieldEmpty1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerIconExtraField1"
+                        style="@style/DividerBigStyle" />
+
+                    <View
+                        android:id="@+id/viewIconExtraFieldEmpty2"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerIconExtraField2"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewIconExtraFieldSalary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width"
+                        android:text="0%" />
+
+                    <TextView
+                        android:id="@+id/textViewIconExtraFieldCosts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width"
+                        android:text="0%" />
+
+                    <View
+                        android:id="@+id/viewIconExtraFieldEmpty3"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerIconExtraField3"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewIconExtraFieldPercentageCapital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width"
+                        android:text="0%" />
+
+                    <TextView
+                        android:id="@+id/textViewIconExtraFieldPercentageSavings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width"
+                        android:text="0%" />
+
+                    <View
+                        android:id="@+id/viewIconExtraFieldEmpty4"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerIconExtraField4"
+                        style="@style/DividerBigStyle" />
+
+                    <View
+                        android:id="@+id/viewIconExtraFieldEmpty5"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewYear"
+                        style="@style/TextViewStyle"
+                        android:text="Start Year" />
+
+                    <View
+                        android:id="@+id/divider5"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewStartCapital"
+                        style="@style/TextViewStyle"
+                        android:text="Start Capital" />
+
+                    <View
+                        android:id="@+id/divider6"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewSalary"
+                        style="@style/TextViewStyle"
+                        android:text="Salary " />
+
+                    <TextView
+                        android:id="@+id/textViewCosts"
+                        style="@style/TextViewStyle"
+                        android:text="Costs" />
+
+                    <TextView
+                        android:id="@+id/textViewSavings"
+                        style="@style/TextViewStyle"
+                        android:text="Savings" />
+
+                    <View
+                        android:id="@+id/divider7"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewPercentageCapital"
+                        style="@style/TextViewStyle"
+                        android:text="Capital (%)" />
+
+                    <TextView
+                        android:id="@+id/textViewPercentageSavings"
+                        style="@style/TextViewStyle"
+                        android:text="Savings (%)" />
+
+                    <TextView
+                        android:id="@+id/textViewPassiveIncome"
+                        style="@style/TextViewStyle"
+                        android:text="Passive Income" />
+
+                    <View
+                        android:id="@+id/divider8"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewFinalCapital"
+                        style="@style/TextViewStyle"
+                        android:text="Total Capital" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditorsText"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackgroundEditorsFilter"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextInputRowCurrentYear"
+                        style="@style/EditTextStyle"
+                        android:hint="2020"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="4" />
+
+                    <View
+                        android:id="@+id/dividerInputRow1"
+                        style="@style/DividerBigStyle" />
+
+                    <EditText
+                        android:id="@+id/editTextInputRowStartCapital"
+                        style="@style/EditTextStyle"
+                        android:hint="0"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal|numberSigned" />
+
+                    <View
+                        android:id="@+id/dividerInputRow2"
+                        style="@style/DividerBigStyle" />
+
+                    <EditText
+                        android:id="@+id/editTextInputRowSalary"
+                        style="@style/EditTextStyle"
+                        android:hint="0"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal|numberSigned" />
+
+                    <EditText
+                        android:id="@+id/editTextInputRowCosts"
+                        style="@style/EditTextStyle"
+                        android:hint="0"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal|numberSigned" />
+
+                    <TextView
+                        android:id="@+id/textViewInputRowSavings"
+                        style="@style/EditTextStyle"
+                        android:text="0" />
+
+                    <View
+                        android:id="@+id/dividerInputRow3"
+                        style="@style/DividerBigStyle" />
+
+                    <EditText
+                        android:id="@+id/editTextInputRowPercentageGrowCapital"
+                        style="@style/EditTextStyle"
+                        android:hint="0%"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal|numberSigned" />
+
+                    <TextView
+                        android:id="@+id/textViewInputRowPercentageGrowSavings"
+                        style="@style/EditTextStyle"
+                        android:text="0%"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewInputRowPassiveIncome"
+                        style="@style/EditTextStyle"
+                        android:text="0" />
+
+                    <View
+                        android:id="@+id/dividerInputRow4"
+                        style="@style/DividerBigStyle" />
+
+                    <TextView
+                        android:id="@+id/textViewInputRowFinalCapital"
+                        style="@style/EditTextStyle"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/viewEditorRowEmpty1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerEditorRow1"
+                        style="@style/DividerBigStyle" />
+
+                    <View
+                        android:id="@+id/viewEditorRowEmpty2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerEditorRow2"
+                        style="@style/DividerBigStyle" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonEditorRowSalary"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonEditorRowCosts"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                    <View
+                        android:id="@+id/viewEditorRowEmpty3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerEditorRow3"
+                        style="@style/DividerBigStyle" />
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonEditorRowPercentageGrowCapital"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_primary_width"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                    <View
+                        android:id="@+id/viewEditorRowEmpty4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/viewEditorRowEmpty5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                    <View
+                        android:id="@+id/dividerEditorRow4"
+                        style="@style/DividerBigStyle" />
+
+                    <View
+                        android:id="@+id/viewEditorRowEmpty6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_primary_width" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewOfResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/layout_result_list_item" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMainBlock">
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

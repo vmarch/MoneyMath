@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:textColor">?attr/colorAccent</item>
+
+    </style>
+
+    <style name="ActivityWithoutTitle" parent="Theme.MaterialComponents.Light.Dialog">
+        <!--        <item name="android:windowNoTitle">true</item>-->
+        <item name="android:theme">@style/AppTheme</item>
+    </style>
+
+    <style name="CustomToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/row_vertical_height</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:paddingLeft">@dimen/text_view_padding</item>
+        <item name="android:paddingRight">@dimen/text_view_padding</item>
+
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/row_vertical_height</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">end|center_vertical</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingLeft">@dimen/text_view_padding</item>
+        <item name="android:paddingRight">@dimen/text_view_padding</item>
+
+    </style>
+
+    <style name="DividerViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_main_big_height</item>
+        <item name="android:background">@color/colorDivider</item>
+
+    </style>
+
+    <style name="DividerBigStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_main_big_height</item>
+        <item name="android:background">@color/colorDividerBig</item>
+
+    </style>
+
+    <style name="DividerSmallStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_main_big_height</item>
+        <item name="android:background">@color/colorDividerSmall</item>
+
+    </style>
+
+    <style name="DividerBigStyleList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_main_big_height</item>
+        <item name="android:background">@color/colorDividerListBig</item>
+    </style>
+
+    <style name="DividerSmallStyleList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_main_big_height</item>
+        <item name="android:background">@color/colorDividerListSmall</item>
+
+    </style>
+
+</resources>
